@@ -1,5 +1,9 @@
+---
 # Úvod do datové analýzy
   Jakub Vajda [link](http://kubow.cz).
+  
+  Pro přípravu prostředí k tomuto kurzu navštivte odkaz [[software]].
+  Všechny užívané zkratky naleznete v odkazu [[pojmy]].
     
 ## Technické předpoklady kurzu
 - Teoretické
@@ -11,7 +15,6 @@
 	- Prezentační platformy
 		- Office (PowerPoint / OO, ..)
 		- Web (reveal.js / jupyter)
----
 ## Přehled kurzu
 - Data kolem nás
 - Data dle typu proměnných
