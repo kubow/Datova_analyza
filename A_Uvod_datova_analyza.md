@@ -1,9 +1,16 @@
+<!-- #region -->
 ---
 # Úvod do datové analýzy
-  Jakub Vajda [link](http://kubow.cz).
-  
-  Pro přípravu prostředí k tomuto kurzu navštivte odkaz [[software]].
-  Všechny užívané zkratky naleznete v odkazu [[pojmy]].
+
+Autor [Jakub Vajda](http://kubow.cz).
+
+## Příprava prostředí
+
+Doporučuje se připravovat izolované prostředí, zvláště pak u pythonu využívat vi
+
+Pro přípravu prostředí k tomuto kurzu navštivte odkaz [software](1_inicializace/B_software.md).
+
+Všechny užívané zkratky naleznete v odkazu [pojmy](1_inicializace/C_pojmy.md).
     
 ## Technické předpoklady kurzu
 - Teoretické
@@ -15,16 +22,16 @@
 	- Prezentační platformy
 		- Office (PowerPoint / OO, ..)
 		- Web (reveal.js / jupyter)
+
 ## Přehled kurzu
 - Data kolem nás
 - Data dle typu proměnných
 - Data dle míry proměnných
-    -
 - Zobrazení dat
 - Typy datových souborů (s příklady)
 - Nástroje k práci s daty
 
----
+
 ## Data kolem nás
  - Textová data
  -  Numerická data
@@ -36,7 +43,7 @@
 	 -  Zvukový záznam
 	 -  Data sociálních sítí
 
----
+<!-- #endregion -->
 ## Rozdělení dat
   - dle typu proměnných
   - dle míry
@@ -45,7 +52,6 @@
 
 -   Kategorické (Kvalitativní)
 -   Numerické (Kvantitativní)
-	-
 -   Diskrétní
 -   Spojité
 
@@ -94,23 +100,4 @@ Typy datových souborů
 -   Přírodní
 -   Meteorologické
 
-Nástroje k práci s daty
 
--   Programovací jazyky
-
-	-   Python
-	-   R
-	-   JavaScript
-
--   Tabulkové procesory (MS Excel / OpenOffice / LibreOffice …)
--   Databázový software
-
-	-   MS Access, MS SQL Server
-	-   MySQL, PostgreSQL, MongoDB
-	-   Oracle, SAP, Teradata
-
--   Visualizační software
-
-	-   MS PowerBI
-	-   Tableau
-	-   Qlik
