@@ -6,9 +6,9 @@ Autor [Jakub Vajda](http://kubow.cz).
 
 ## Příprava prostředí
 
-Doporučuje se připravovat izolované prostředí, zvláště pak u pythonu využívat vi
+Doporučuje se připravovat izolované prostředí, zvláště pak u pythonu využívat venv
 
-Pro přípravu prostředí k tomuto kurzu navštivte odkaz [software](1_inicializace/B_software.md).
+Pro přípravu prostředí k tomuto kurzu můžete použít libovolný  [software](1_inicializace/B_software.md).
 
 Všechny užívané zkratky naleznete v odkazu [pojmy](1_inicializace/C_pojmy.md).
     
