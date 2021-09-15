@@ -1,18 +1,19 @@
-<!-- #region -->
----
 # Úvod do datové analýzy
 
 Autor [Jakub Vajda](http://kubow.cz).
 
 ## Příprava prostředí
 
-Doporučuje se připravovat izolované prostředí, zvláště pak u pythonu využívat venv
+Doporučuje se pracovat v izolovaném prostředí, v ideálním případě vždy na kopii dat.
 
 Pro přípravu prostředí k tomuto kurzu můžete použít libovolný  [software](1_inicializace/B_software.md).
+
+Pokud si zvolíte aplikaci Python, pak se doporučuje využívat venv (virtuální prostředí).
 
 Všechny užívané zkratky naleznete v odkazu [pojmy](1_inicializace/C_pojmy.md).
     
 ## Technické předpoklady kurzu
+
 - Teoretické
 	- Základy matematiky
 	- Deskriptivní statistika
@@ -23,73 +24,7 @@ Všechny užívané zkratky naleznete v odkazu [pojmy](1_inicializace/C_pojmy.md
 		- Office (PowerPoint / OO, ..)
 		- Web (reveal.js / jupyter)
 
-## Přehled kurzu
-- Data kolem nás
-- Data dle typu proměnných
-- Data dle míry proměnných
-- Zobrazení dat
-- Typy datových souborů (s příklady)
-- Nástroje k práci s daty
-
-
 ## Data kolem nás
- - Textová data
- -  Numerická data
- -  Kategorická data
- -  Časové řady
- -  Grafická data
- -  Mapová data
- -  Moderní datové vstupy
-	 -  Zvukový záznam
-	 -  Data sociálních sítí
-
-<!-- #endregion -->
-## Rozdělení dat
-  - dle typu proměnných
-  - dle míry
-
-#### Data dle typu proměnných
-
--   Kategorické (Kvalitativní)
--   Numerické (Kvantitativní)
--   Diskrétní
--   Spojité
-
-#### Data dle míry proměnných
-
--   Nominální
--   Ordinální
--   Intervalové
--   Poměr
-
----
-## Možnosti ukádání dat
-  - Fyzické soubory
-  - Databáze
-  - Cloudové úložiště
-
-Tabulkové zobrazení dat
-
--   jedné (Univarite)
--   dvou (Bivariate)
--   více proměnných (Multivariate)
-
-Grafické zobrazení dat
-
--   Kvantitativní
-
-	-   Koláčový graf
-	-   Histogram
-	-   Bodový diagram
-
--   Kvantitativní
-
-	-   Sloupcový graf
-	-   Paretův graf
-	-   Teplotní mapa
-
-
-Typy datových souborů
 
 -   Statistické
 -   Finanční
@@ -99,5 +34,20 @@ Typy datových souborů
 -   Transportní
 -   Přírodní
 -   Meteorologické
+
+## Přehled kurzu
+
+A) Inicializace projektu 
+- příprava prezentačního prostředí
+- instalace dalšího software
+- příprava myšlenkového rozpoložení 
+
+B) Popis zdrojových dat
+- základní rozdělení úložišť
+- popisy jednotlivých typů a jejich rozdíly
+    
+C) Analýza dat
+- základní typy analýz
+- pokročilé analýzy
 
 

@@ -11,31 +11,36 @@ Soubor je uložen ve formátu pptx, který je čitelý jednou z následujících
 [Apache OpenOffice Impress](https://www.openoffice.org/product/impress.html)
 
 
-
-
-
-## 2. modul jupyter z programovacího jazyka python
+<!-- #region -->
+## 2. Modul Jupyter z programovacího jazyka Python
 
 V prvé řadě je zapotřebí nainstalovat moduly jupyter a jupytext a ozkoušet jejich funkčnost.
 Dodatečné nastavení modulu jupytext je uvedeno zde: [Jupyter notebooks as Markdown documents (pythonawesome.com)](https://pythonawesome.com/jupyter-notebooks-as-markdown-documents/)
 
-
 ```bash
- pip install jupyter  # nainstalovat knihvnu jupyter ()
+ pip install jupyter  # nainstalovat knihovnu Jupyter
  jupyter notebook     # otestovat funkční instalaci
  ```
 
-Volitelný krok
-doinstalace jupytext [Installation — Jupytext documentation](https://jupytext.readthedocs.io/en/latest/install.html)
-
+### 2a. Jupytext (volitelný krok)
+[Instalace modulu Jupytext](https://jupytext.readthedocs.io/en/latest/install.html) sloužící k synchronizaci jupyter prezentací s MD soubory.
 
 ```bash
  pip install jupytext --upgrade # volitelný krok pro synchronizaci s markdown
  jupyter notebook
  ```
 
+<!-- #endregion -->
 
-## 3. markdown editor
+## 3. Markdown editor
 
-Výše zmíněný modul jupytext umožňuje synchronizovat prezentaci také ve fromě markdown.
+V případě Markdown (MD) lze volit prakticky jakýkoliv dostupný editor. Autor používá následující řešení:
+
+- [Markdown rozšíření pro Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
+
+- [Obsidian - multiplatformní aplikace pro editaci Markdown](https://obsidian.md/)
+
+- [Byword - editace Markdown pro Mac](https://apps.apple.com/us/app/byword/id420212497?mt=12)
+
+- [Ghostwriter - editace Markdown pro Windows](https://wereturtle.github.io/ghostwriter/)
 
