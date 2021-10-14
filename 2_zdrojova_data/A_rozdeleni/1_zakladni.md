@@ -37,6 +37,11 @@
 -   dvou (Bivariate)
 -   více proměnných (Multivariate)
 
+
+## Zajímavé odkazy
+
+[Apache Arrow vs. parquet](http://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html)
+
 ```python
 
 ```
