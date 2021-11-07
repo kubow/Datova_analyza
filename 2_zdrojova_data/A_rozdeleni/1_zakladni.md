@@ -10,7 +10,19 @@
 	 -  Audiovizuální záznamy
 	 -  Data sociálních sítí
 
+## Data kolem nás
+
+-   Statistické
+-   Finanční
+-   Vědecké
+-   Kulturní
+-   Geografické
+-   Transportní
+-   Přírodní
+-   Meteorologické
+
 ## Rozdělení dat
+
   - dle typu proměnných
   - dle míry
 

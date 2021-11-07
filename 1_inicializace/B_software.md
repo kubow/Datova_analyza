@@ -40,12 +40,12 @@ Prohlížení dat pomocí programovacího jazyka python:
 
 ```python
 import pandas as pd  # knihovna pandas umí mimo jiné číst xls soubory (! ne xlsx)
-csv_delimited = pd.read_csv("../2_zdrojova_data/A_uloziste/engine_overview_202105140001.csv")    # dynamic variable loading
+csv_delimited = pd.read_csv("../2_zdrojova_data/B_uloziste/engine_overview_202105140001.csv")    # dynamic variable loading
 print(csv_delimited.describe())
-# csv_fixed = pd.read_fwf("../2_zdrojova_data/A_uloziste/engine_overview_202105140001.csv")  # case fixed width table
+# csv_fixed = pd.read_fwf("../2_zdrojova_data/B_uloziste/engine_overview_202105140001.csv")  # case fixed width table
 # print(csv_fixed)
 txt_data = []
-with open('../2_zdrojova_data/A_uloziste/engine_overview_202105140001.csv') as f:
+with open('../2_zdrojova_data/B_uloziste/engine_overview_202105140001.csv') as f:
     txt_data = f.readlines()
 print(f'file total length: {len(txt_data)}')
 ```
@@ -57,7 +57,7 @@ Prohlížení dat pomocí programovacího jazyka python:
 
 ```python
 import json
-obsah = json.loads("../2_zdrojova_data/A_uloziste/engine_overview_202105140001.json")
+obsah = json.loads("../2_zdrojova_data/B_uloziste/engine_overview_202105140001.json")
 print(obsah)
 ```
 
