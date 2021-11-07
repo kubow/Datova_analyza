@@ -1,4 +1,4 @@
-Grafické zobrazení dat
+# Grafické zobrazení dat
 
 -   Kvantitativní
 
@@ -11,3 +11,7 @@ Grafické zobrazení dat
 	-   Sloupcový graf
 	-   Paretův graf
 	-   Teplotní mapa
+
+```python
+
+```

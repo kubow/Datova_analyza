@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="160mm"
+   height="200mm"
+   viewBox="0 0 160 200"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="SQL_SELECT_structure.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title51333">SQL SELECT structure</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.52410025"
+     inkscape:cx="-329.1355"
+     inkscape:cy="376.8363"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="190mm" />
+  <defs
+     id="defs2">
+    <rect
+       x="26.983646"
+       y="75.554207"
+       width="534.75281"
+       height="691.96881"
+       id="rect4323" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0.50483345,-15.145003)"
+       id="text4321"
+       style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect4323);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="26.984375"
+         y="95.017704"
+         id="tspan79144"><tspan
+   style="fill:#0000ff"
+   id="tspan79140">SELECT</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79142">-- vybrání polí (povinné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="121.68433"
+         id="tspan79146">  sloupec_1,
+</tspan><tspan
+         x="26.984375"
+         y="148.35096"
+         id="tspan79148">  sloupec_2,
+</tspan><tspan
+         x="26.984375"
+         y="175.01758"
+         id="tspan79150">  ...
+</tspan><tspan
+         x="26.984375"
+         y="201.68421"
+         id="tspan79152">
+</tspan><tspan
+         x="26.984375"
+         y="228.35083"
+         id="tspan79158"><tspan
+   style="fill:#0000ff"
+   id="tspan79154">FROM</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79156">-- zdroj dat (povinné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="255.01746"
+         id="tspan79160">  tabulka1 t1
+</tspan><tspan
+         x="26.984375"
+         y="281.68409"
+         id="tspan79162">  
+</tspan><tspan
+         x="26.984375"
+         y="308.35071"
+         id="tspan79168"><tspan
+   style="fill:#0000ff"
+   id="tspan79164">JOIN</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79166">-- další zdroj dat (volitelné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="335.01734"
+         id="tspan79172">  tabulka2 t2 <tspan
+   style="fill:#0000ff"
+   id="tspan79170">ON</tspan> (t1.klic = t2.klic)
+</tspan><tspan
+         x="26.984375"
+         y="361.68396"
+         id="tspan79174">  
+</tspan><tspan
+         x="26.984375"
+         y="388.35059"
+         id="tspan79180"><tspan
+   style="fill:#0000ff"
+   id="tspan79176">WHERE</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79178">-- omezení dle podmínky (volitelné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="415.01722"
+         id="tspan79182">  t1.pole = hodnota
+</tspan><tspan
+         x="26.984375"
+         y="441.68384"
+         id="tspan79184">  
+</tspan><tspan
+         x="26.984375"
+         y="468.35047"
+         id="tspan79190"><tspan
+   style="fill:#0000ff"
+   id="tspan79186">GROUP BY</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79188">-- agregace (volitelné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="495.01709"
+         id="tspan79192">  t1.pole
+</tspan><tspan
+         x="26.984375"
+         y="521.68372"
+         id="tspan79194">  
+</tspan><tspan
+         x="26.984375"
+         y="548.35035"
+         id="tspan79200"><tspan
+   style="fill:#0000ff"
+   id="tspan79196">ORDER BY</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79198">-- seřazení (volitelné)
+</tspan></tspan><tspan
+         x="26.984375"
+         y="575.01697"
+         id="tspan79202">  t1.pole
+</tspan><tspan
+         x="26.984375"
+         y="601.6836"
+         id="tspan79204">  
+</tspan><tspan
+         x="26.984375"
+         y="628.35022"
+         id="tspan79210"><tspan
+   style="fill:#0000ff"
+   id="tspan79206">HAVING</tspan>  <tspan
+   style="fill:#008000"
+   id="tspan79208"> -- podmínka pro agregace (volitelné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="655.01685"
+         id="tspan79212">  t1.pole = hodnota
+</tspan><tspan
+         x="26.984375"
+         y="681.68347"
+         id="tspan79214">  
+</tspan><tspan
+         x="26.984375"
+         y="708.3501"
+         id="tspan79220"><tspan
+   style="fill:#0000ff"
+   id="tspan79216">LIMIT</tspan>   <tspan
+   style="fill:#008000"
+   id="tspan79218">-- omezení počtu výsledků (volitelné)</tspan>
+</tspan><tspan
+         x="26.984375"
+         y="735.01673"
+         id="tspan79222">  hodnota
+</tspan><tspan
+         x="26.984375"
+         y="761.68335"
+         id="tspan79224">  
+</tspan></text>
+  </g>
+  <metadata
+     id="metadata51331">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>SQL SELECT structure</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
