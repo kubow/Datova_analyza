@@ -34,7 +34,7 @@ A) Inicializace projektu
 
 B) Popis zdrojových dat
 - základní rozdělení úložišť
-- popisy jednotlivých typů a jejich rozdíly
+- popisy jednotlivých typůd
     
 C) Analýza dat
 - dotazování na data

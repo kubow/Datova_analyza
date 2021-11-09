@@ -1,13 +1,16 @@
 # Dotazování na data
 
-Pro jednodušší datové sety uložené v základních formátech (TXT, CSV, XLS, ...) obecně platí, že jejich prohlížení a úpravy lze provádět v základních programech (uvedeno v [sekci inicializace/software](../1_inicializace/B_software.ipynb)). 
+Prvním krokem datové analýzy obecně je shromáždění relevantních informací (v tomto případě datových souborů) na jendno místo. V této kapitole jsou popsány způsoby získávání dat, které užívají pojmy předchozí kapitoly
 
-U složitějších datových setů (více než 1 tabulka/zdroj) pak používáme k dotazování jednu z následujících metod:
+Pro jednodušší datové soubory uložené v základních formátech (TXT, CSV, XLS, ...) můžeme k jejich prohlížení a úpravám použít programy určené pro práci s těmito formáty (uvedeno v sekci [inicializace/software](../1_inicializace/B_software.ipynb)). 
 
-- SQL
-- Python
-- R
-- další jazyky sloužící k získání dat
+U složitějších datových setů (více než 1 tabulka/zdroj) používáme k dotazování jednu z následujících metod<sup>1</sup>:
+
+- dotazování pomocí jazyka SQL
+- dotazování pomocí jazyků XQuery/XPath (pro data typu XML)
+- dotazování pomocí jazyků JAQL/JSONiq (pro data typu JSON)
+- dotazování pomocí programovacích jazyků (Python, R, ...)
+- další jazyky sloužící k získání specifických typů dat
 
 Typy operací složících ke spojování více datových setů částečně závisí na zvolení metody zpracování. V základním pojetí se však tato problematika kryje s matematickou definicí operací nad množinami:
 
@@ -15,13 +18,15 @@ Typy operací složících ke spojování více datových setů částečně zá
 - průnik
 - sjednocení
 
+Níže jsou uvedeny konkrétní vybrané příklady získávání dat.
 
+<!-- #region -->
+## Získání dat pomocí SQL 
 
+Jazyk SQL (Structured Query Language) se skládá z několika klíčových slov, které byly standartizovány na konci 80. let. 
+Slouží k dotazování a změně strukturovaných dat uložených především v relačních databázových systémech (RDBMS). 
+Pomocí SQL lze dokonce měnit strukturu dat i data samotná. SQL 
 
-## Získání dat pomocí SQL (Structured Query Language)
-
-Jazyk SQL slouží k dotazování na data uložená ve strukturované podobě především v relačních databázových systémech (RDBMS).
-Pomocí SQL lze dokonce měnit strukturu dat i data samotná. SQL se skládá z několika klíčových slov, které byly standartizovány na konci 80. let.
 
 Obecná struktura výběrového dotazu je následující:
 
@@ -30,7 +35,7 @@ Obecná struktura výběrového dotazu je následující:
 Pro úpravu dat v jazyce SQL se používá následující struktura:
 
 ![uprava dat](../obr/SQL_UPDATE_structure.svg)
-
+<!-- #endregion -->
 
 ## Získání dat pomocí jazyka Python
 
@@ -84,6 +89,12 @@ Jazyk R pracuje s omezeným počtem datových typů:
 | POSIXct    | Datum a čas             | `'2022-01-01 12:01:00'`  |
 
 
+
+
+--------
+Poznámky:
+
+    <sup>1</sup> - kompletnější výčet jazyků na dotazování se lze dočíst na [wikipedii](https://en.wikipedia.org/wiki/Query_language).
 
 ```python
 
