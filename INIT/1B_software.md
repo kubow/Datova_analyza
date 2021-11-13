@@ -1,5 +1,7 @@
 <!-- #region -->
-# prohlížení datových souborů
+# programy pro práci s datovými soubory
+
+[←](../Readme.md)
 
 Níže jsou popsány základní typy datasetů a nástroje, které s nimi umí pracovat
 
@@ -38,17 +40,6 @@ Univerzální nástroje k práci s daty
 Prohlížení dat pomocí programovacího jazyka python:
 <!-- #endregion -->
 
-```python
-import pandas as pd  # knihovna pandas umí mimo jiné číst xls soubory (! ne xlsx)
-csv_delimited = pd.read_csv("../2_zdrojova_data/B_uloziste/engine_overview_202105140001.csv")    # dynamic variable loading
-print(csv_delimited.describe())
-# csv_fixed = pd.read_fwf("../2_zdrojova_data/B_uloziste/engine_overview_202105140001.csv")  # case fixed width table
-# print(csv_fixed)
-txt_data = []
-with open('../2_zdrojova_data/B_uloziste/engine_overview_202105140001.csv') as f:
-    txt_data = f.readlines()
-print(f'file total length: {len(txt_data)}')
-```
 ## Strukturované soubory (formáty xml, json)
 
 Software se většinou používá identický jako při práci s textovými soubory.
@@ -57,8 +48,10 @@ Prohlížení dat pomocí programovacího jazyka python:
 
 ```python
 import json
-obsah = json.loads("../2_zdrojova_data/B_uloziste/engine_overview_202105140001.json")
-print(obsah)
+with open("../DATA/engine_overview_202105140003.json", encoding='utf-8') as j:
+    obsah = json.loads(j.read())
+
+print(list(obsah['engine_overview'])[0:3])
 ```
 
 ## Tabulkové soubory (formáty xls, xlsx, odf, ...)

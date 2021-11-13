@@ -1,3 +1,7 @@
+# Základní rozdělení dat
+
+[←](../Readme.md)
+
 ## Typy datových souborů
 
  - Textová data

@@ -1,5 +1,7 @@
 ## Možnosti ukádání dat
 
+[←](../Readme.md)
+
   - Fyzické soubory
   - Databáze
   - Cloudové úložiště

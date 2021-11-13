@@ -1,5 +1,7 @@
 # Grafické zobrazení dat
 
+[←](../Readme.md)
+
 -   Kvantitativní
 
 	-   Koláčový graf

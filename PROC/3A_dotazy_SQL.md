@@ -1,6 +1,8 @@
 <!-- #region -->
 ## Získání dat pomocí SQL 
 
+[←](3A_dotazy.md)
+
 Jazyk SQL (Structured Query Language) se skládá z několika klíčových slov, které byly standartizovány na konci 80. let. 
 Slouží k dotazování a změně strukturovaných dat uložených především v relačních databázových systémech (RDBMS). 
 Pomocí SQL lze dokonce měnit strukturu dat i data samotná. SQL 

@@ -1,5 +1,7 @@
 ## Získání dat pomocí jazyka Python
 
+[←](3A_dotazy.md)
+
 Programovací jazyk Python je navržen jako víceúčelový, neslouží tedy jen k analýzám dat. Poprvé byl vydán v roce 1991 a od té doby bylo vydáno několik verzí, v současné době se drží vývojová řada označena jako Python 3<sup>1</sup>. Díky jeho univerzálnosti vyšla celá řada rozšíření a nádstaveb, pro účely datové analýzy nás však bude zajímat jen základní verze Python 3 s několika doinstalovanými moduly pro práci s daty.
 
 | Příkaz    | Popis       | 
@@ -22,8 +24,21 @@ Jazyk Python pracuje s omezeným počtem datových typů:
 
 
 
+```python
+import pandas as pd  # knihovna pandas umí mimo jiné číst xls soubory (! ne xlsx)
+csv_delimited = pd.read_csv("../DATA/engine_overview_202105140001.csv")    # dynamic variable loading
+print(csv_delimited.describe())
+# csv_fixed = pd.read_fwf("../2_zdrojova_data/A_uloziste/engine_overview_202105140001.csv")  # case fixed width table
+# print(csv_fixed)
+txt_data = []
+with open('../DATA/engine_overview_202105140001.csv') as f:
+    txt_data = f.readlines()
+print(f'file total length: {len(txt_data)}')
+```
 
 ## Získání dat pomocí jazyka R
+
+[←](3A_dotazy.md)
 
 Programovací jazyk R je defnován jako prostředí pro zpracování dat a jejich analýzu. První vydání tohoto jazyka je datováno do roku 1995, jeho kořeny však sahají až do 70. let. Tento jazyk klade velký důraz na kompatibilitu s matematickými definicemi, doporučuje se tedy pracovat s tímto jazykem až po zvládnutí matematického základu. Pro usnadnění práce s čistě textovým prostředím bylo vydáno několik grafických nádstaveb (příkladem nejrozšířenější R Studio). Také je potřeba zmínit, že funkcionalitu pro různé typy datových setů a například i grafické zobrazování dat zajišťují tzv. balíčky, které lze do prostředí doinstalovat (stejně jako R je většina vedena pod licencí open-source).
 
