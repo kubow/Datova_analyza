@@ -1,5 +1,4 @@
-<!-- #region -->
-# programy pro práci s datovými soubory
+## Programy pro práci s datovými soubory
 
 [←](../Readme.md)
 
@@ -9,27 +8,37 @@ Pořadí nástrojů je seřazeno dle abecedy, preference je ponechána čistě n
 
 Univerzální nástroje k práci s daty
 
--   Programovací jazyky
+-   Textové a tabulkové procesory 
+-   Programovací jazyky <details>
+    <summary>
+         (detaily)
+    </summary>
+    (Srovnání oblíbenosti programovacích jazyků z roku 2020 [zdroj stackoverflow.com])[https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages]
+</details>  
 
-	-   Python
+	-   Python (Pandas, SciPy, ...)
 	-   R
-	-   JavaScript
+    -   PAW/ROOT<sup>1</sup>
+	-   Julia
 
--   Tabulkové procesory
 -   Databázový software
 
 	-   XML
 	-   MySQL, PostgreSQL, MongoDB
 	-   Oracle, SAP, Teradata
 
--   Visualizační software
+-   Analytický/Visualizační software
 
 	-   MS PowerBI
+    -   Orange
 	-   Tableau
 	-   Qlik
 
 
-## Textové soubory (formáty txt, csv, tsv, out, ...) 
+
+### Textové procesory (formáty txt, csv, tsv, out, ...) 
+
+Do této kategorie lze zanést i strukturované soubory typů JSON, XML. Je třeba však mít na paměti, že uvedné podléhají kontrolám struktury, úpravy se tedy doporučuje provádět za kotroly validátoru. 
 
 [Notepad++ (notepad-plus-plus.org)](https://notepad-plus-plus.org/)
 
@@ -37,24 +46,7 @@ Univerzální nástroje k práci s daty
 
 [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 
-Prohlížení dat pomocí programovacího jazyka python:
-<!-- #endregion -->
-
-## Strukturované soubory (formáty xml, json)
-
-Software se většinou používá identický jako při práci s textovými soubory.
-
-Prohlížení dat pomocí programovacího jazyka python:
-
-```python
-import json
-with open("../DATA/engine_overview_202105140003.json", encoding='utf-8') as j:
-    obsah = json.loads(j.read())
-
-print(list(obsah['engine_overview'])[0:3])
-```
-
-## Tabulkové soubory (formáty xls, xlsx, odf, ...)
+### Tabulkové procesory (formáty xls, xlsx, odf, ...)
 
 [Apache OpenOffice Calc](http://www.openoffice.org/product/calc.html)
 
@@ -70,28 +62,16 @@ print(list(obsah['engine_overview'])[0:3])
 
 [Zoho Sheet | Online Spreadsheet Software](https://www.zoho.com/sheet/?src=zoho-home&ireft=ohome)
 
-Prohlížení tabulkových dat pomocí programovacího jazyka python: 
-
-```python
-import pandas as pd  # knihovna pandas umí mimo jiné číst xls soubory
-import openpyxl  # knihovna openpyxl umí číst xlsx soubory
-xls = pd.read_excel("../2_zdrojova_data/A_uloziste/engine_overview_202105140001.xls")
-print(f'{"*"*3} XLS soubor nacteny pomoci pandas:\n {xls.describe()}')
-xlsx = openpyxl.load_workbook("../2_zdrojova_data/A_uloziste/engine_overview_202105140001.xlsx") 
-sheet = xlsx.active  # read active sheet
-print("*"*3, 'XLSX soubor nacteny pomoci openpyxl:', sheet)
-
-```
 
 <!-- #region -->
-## Databáze
+### Databáze
 
-### SQLite (formáty db, sqlite, ...) 
+#### SQLite (formáty db, sqlite, ...) 
 
 [DB Browser for SQLite (sqlitebrowser.org)](https://sqlitebrowser.org/)
 
 
-### Univerzální prohlížeče
+#### Univerzální prohlížeče
 
 [Beekeeper](https://www.beekeeperstudio.io/) - Jednoduchý a bezpečný prohlížečIt is mature and secure enough (electron-based) and platform independent (you did not specify win/linux/mac) however it is missing visual interface for building queries.
 
@@ -104,6 +84,9 @@ print("*"*3, 'XLSX soubor nacteny pomoci openpyxl:', sheet)
 Prohlížení velkého množství databází v jazyce python umožňuje knihovna SQLAlchemy, viz 
 <!-- #endregion -->
 
-```python
+--------
+Poznámky:
 
-```
+<sup>1</sup> - jedná se o FORTRAN/C++ frameworky pro analýzu dat, které vznikly v [CERN](https://en.wikipedia.org/wiki/CERN)u.
+
+<sup>2</sup> -

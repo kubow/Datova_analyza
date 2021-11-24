@@ -13,7 +13,7 @@ Databáze zkratek je uložena ve složce zdrojová data. Níže jsou uvedeny bě
 
 ## Statistika
 
-Teoretické základy a různá pravidla jsou rozebrána detailněji v sekci 3_Analyza.
+Teoretické základy a různá pravidla jsou rozebrána detailněji v sekci [analýza dat](../PROC/3C_analyza.md).
 
 ## Literární zdroje CZ
 

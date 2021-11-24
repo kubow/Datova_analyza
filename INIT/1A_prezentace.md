@@ -1,11 +1,11 @@
 <!-- #region -->
-# Příprava prezentačního prostředí
+## Příprava prezentačního prostředí
 
 [←](../Readme.md)
 
 K prohlížení prezentace je potřeba zvolit jednu z následujících cest:
 
-## 1. Prezentační software kancelářského balíku
+### 1. Prezentační software kancelářského balíku
 
 Prezentace je čitelná jednou z následujících aplikací:
 
@@ -19,7 +19,7 @@ Prezentace je čitelná jednou z následujících aplikací:
 Po výběru aplikace otevřete soubor v kořenové složce kurzu (soubor s názvem [A_Uvod_datova_analyza.pptx](../A_Uvod_datova_analyza.pptx)).
 <!-- #endregion -->
 
-## 2. Markdown editor
+### 2. Markdown editor
 
 V případě Markdown<sup>2</sup> (zkratka MD) lze volit prakticky jakýkoliv dostupný editor. Autor používá následující řešení:
 
@@ -31,7 +31,7 @@ V případě Markdown<sup>2</sup> (zkratka MD) lze volit prakticky jakýkoliv do
 
 
 <!-- #region -->
-## 3. Prezentační prostředí python/jupyter
+### 3. Prezentační prostředí python/jupyter
 
 Prvním krokem je instalace programovacího jazyka Python (k dispozici ke stažení na [python.org](https://www.python.org/downloads/)). Modul jupyter umožňuje spouštět poznámkové bloky v prostředí tzv. serveru<sup>1</sup>, který běží na Vaší lokální výpočetní stanici a přistupuje se k němu přes webový prohlížeč.
 
@@ -51,7 +51,7 @@ V poslední části je pak odkázáno na adresu ve webovém prohlížeči:
 
 Dodatečné nastavení modulu jupytext je uvedeno zde:  Ve většině případů je však možné modul jupyter používat ihned po instalaci.
 
-### Jupytext (volitelný krok)
+#### Jupytext (volitelný krok)
 
 Pokud chcete mít jupyter poznámkové bloky synchroniovány s MD soubory, je k tomu potřeba nainstalovat [modul Jupytext](https://jupytext.readthedocs.io/en/latest/install.html). Návod je uveden níže:
 
@@ -59,8 +59,19 @@ Pokud chcete mít jupyter poznámkové bloky synchroniovány s MD soubory, je k 
  pip install jupytext --upgrade # volitelný krok pro synchronizaci s markdown
  jupyter notebook               # spuštění poznámkového bloku ve webovém prohlížeči
  ```
+#### Další nastavení prostředí
+
+Spuštěním níže uvedeného kódu dojde k zobrazení dostupných témat (barevné nastavené prostředí jupyter) a jejich zavedení (projevuje se až po restartu jupyter).
 
 <!-- #endregion -->
+
+```python
+# zobrazení dostupných témat
+!jt -l 
+# výběr konkrétního tématu
+# !jt -t solarizedl
+# odkomentovat řádek, spustit a restartovat jupyter
+```
 
 <!-- #region -->
 --------

@@ -1,8 +1,8 @@
-# Základní rozdělení dat
+## Základní rozdělení dat
 
 [←](../Readme.md)
 
-## Typy datových souborů
+### Typy datových souborů
 
  - Textová data
  - Numerická data
@@ -14,7 +14,7 @@
 	 -  Audiovizuální záznamy
 	 -  Data sociálních sítí
 
-## Data kolem nás
+### Data kolem nás
 
 -   Statistické
 -   Finanční
@@ -30,14 +30,14 @@
   - dle typu proměnných
   - dle míry
 
-#### Data dle typu proměnných
+##### Data dle typu proměnných
 
 -   Kategorické (Kvalitativní)
 -   Numerické (Kvantitativní)
 -   Diskrétní
 -   Spojité
 
-#### Data dle míry proměnných
+##### Data dle míry proměnných
 
 -   Nominální
 -   Ordinální
@@ -47,14 +47,14 @@
 
 
 
-## Tabulkové zobrazení dat
+### Tabulkové zobrazení dat
 
 -   jedné (Univarite)
 -   dvou (Bivariate)
 -   více proměnných (Multivariate)
 
 
-## Zajímavé odkazy
+### Zajímavé odkazy
 
 [Apache Arrow vs. parquet](http://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html)
 
