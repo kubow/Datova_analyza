@@ -1,13 +1,28 @@
 <!-- #region -->
-## Dotazování na data
+## Získávání dat
 
 [←](../Readme.md)
 
-Pro jednodušší soubory dat uložené v základních formátech (TXT, CSV, XLS, ... viz sekce [rozdělení dat](../DATA/2A_rozdeleni_zakladni.md)) můžeme k jejich prohlížení a úpravě použít programy určené pro práci s těmito formáty (uvedeno v sekci [software](../INIT/1B_software.md)). 
+Obecně si můžeme celý proces práce s daty představit zhruba následovně: 
 
-U složitějších datových setů (více než 1 tabulka/zdroj) používáme k dotazování jednu z následujících metod<sup>1</sup>:
+![zpracovani dat](../obr/data_informace_znalosti.svg)
 
-- pomocí SQL (pro strukturovaná data) [3ASQL](3A_dotazy_SQL.md) 
+### Největší výzvy v oblasti získávání dat
+
+| Výzva    | Co řeší  | Příklad
+|---| --- | ---
+| Zpracování obrovských množství dat      | metody sběru dat   | Zvolíme programovací jazyk nebo analytický nástroj?
+| Spojování různorodých zdrojů    | principy datové integrace[^dta_int] | Budeme držet data v oddělené tabulce nebo připojíme k stávajícím záznamům?
+| Udržení konzistentního prostředí | umožněno díky datovému modelování[^dta_model] pomocí standartizované sady znaků a symbolů | Známe strukturu nového zdroje? Jak jej napojíme do systému?
+| Optimální zpracování dat na informace | nasazení datových skladů | Jak často agregovat data? Ukládat s časovýma značkama?
+| Získání odpovědí na naše otázky |   |
+
+
+### Metody sběru dat
+
+Při získávání dat používáme jeden z následujících postupů[^qry_lang]:
+
+- pomocí [SQL](3A_dotazy_SQL.md) (pro strukturovaná data) 
 - pomocí jazyků XPath/XQuery (pro data typu [XML](3A_dotazy_xml.md)) 
 - pomocí jazyků JAQL/JSONiq (pro data typu [JSON](3A_dotazy_json.md)) 
 - pomocí programovacích jazyků ([Python](3A_dotazy_python.md), [R](3A_dotazy_r.md), ...) 
@@ -40,6 +55,10 @@ Při spojování více datových souborů se dostáváme do situací, kdy je tř
 --------
 Poznámky:
 
-<sup>1</sup> - kompletnější výčet jazyků na dotazování se lze dočíst na [wikipedii](https://en.wikipedia.org/wiki/Query_language) pod heslem "Query Language".
+[^dta_model]: anglicky Data Modelling, zkratka DM ([detaily](https://en.wikipedia.org/wiki/Data_modeling))
 
-<sup>2</sup> - datové modelování detailněji popsáno na [wikipedii](https://en.wikipedia.org/wiki/Data_modeling) pod heslem "Data Modelling".
+[^dta_int]: anglicky Data Integration, zkratka DI ([detaily](https://en.wikipedia.org/wiki/Data_integration))
+
+[^qry_lang]: kompletnější výčet jazyků na dotazování se lze dočíst na [wikipedii](https://en.wikipedia.org/wiki/Query_language) pod heslem "Query Language".
+
+
