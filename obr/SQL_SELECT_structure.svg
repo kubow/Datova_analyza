@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="160mm"
-   height="200mm"
-   viewBox="0 0 160 200"
+   width="140mm"
+   height="180mm"
+   viewBox="0 0 140 180"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -29,8 +29,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.52410025"
-     inkscape:cx="-329.1355"
-     inkscape:cy="376.8363"
+     inkscape:cx="-500.85838"
+     inkscape:cy="224.19375"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -43,8 +43,8 @@
     <rect
        x="26.983646"
        y="75.554207"
-       width="534.75281"
-       height="691.96881"
+       width="448.89136"
+       height="606.10736"
        id="rect4323" />
   </defs>
   <g
@@ -55,144 +55,144 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,0.50483345,-15.145003)"
        id="text4321"
-       style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect4323);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect4323);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="26.984375"
-         y="95.017704"
-         id="tspan79144"><tspan
+         y="92.584884"
+         id="tspan8459"><tspan
    style="fill:#0000ff"
-   id="tspan79140">SELECT</tspan>  <tspan
+   id="tspan8455">SELECT</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79142">-- vybrání polí (povinné)</tspan>
+   id="tspan8457">-- vybrání polí (povinné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="121.68433"
-         id="tspan79146">  sloupec_1,
+         y="115.91826"
+         id="tspan8461">  sloupec_1,
 </tspan><tspan
          x="26.984375"
-         y="148.35096"
-         id="tspan79148">  sloupec_2,
+         y="139.25163"
+         id="tspan8463">  sloupec_2,
 </tspan><tspan
          x="26.984375"
-         y="175.01758"
-         id="tspan79150">  ...
+         y="162.58501"
+         id="tspan8465">  ...
 </tspan><tspan
          x="26.984375"
-         y="201.68421"
-         id="tspan79152">
+         y="185.91838"
+         id="tspan8467">
 </tspan><tspan
          x="26.984375"
-         y="228.35083"
-         id="tspan79158"><tspan
+         y="209.25175"
+         id="tspan8473"><tspan
    style="fill:#0000ff"
-   id="tspan79154">FROM</tspan>  <tspan
+   id="tspan8469">FROM</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79156">-- zdroj dat (povinné)</tspan>
+   id="tspan8471">-- zdroj dat (povinné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="255.01746"
-         id="tspan79160">  tabulka1 t1
+         y="232.58513"
+         id="tspan8475">  tabulka1 t1
 </tspan><tspan
          x="26.984375"
-         y="281.68409"
-         id="tspan79162">  
+         y="255.9185"
+         id="tspan8477">  
 </tspan><tspan
          x="26.984375"
-         y="308.35071"
-         id="tspan79168"><tspan
+         y="279.25188"
+         id="tspan8483"><tspan
    style="fill:#0000ff"
-   id="tspan79164">JOIN</tspan>  <tspan
+   id="tspan8479">JOIN</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79166">-- další zdroj dat (volitelné)</tspan>
+   id="tspan8481">-- další zdroj dat (volitelné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="335.01734"
-         id="tspan79172">  tabulka2 t2 <tspan
+         y="302.58525"
+         id="tspan8487">  tabulka2 t2 <tspan
    style="fill:#0000ff"
-   id="tspan79170">ON</tspan> (t1.klic = t2.klic)
+   id="tspan8485">ON</tspan> (t1.klic = t2.klic)
 </tspan><tspan
          x="26.984375"
-         y="361.68396"
-         id="tspan79174">  
+         y="325.91862"
+         id="tspan8489">  
 </tspan><tspan
          x="26.984375"
-         y="388.35059"
-         id="tspan79180"><tspan
+         y="349.252"
+         id="tspan8495"><tspan
    style="fill:#0000ff"
-   id="tspan79176">WHERE</tspan>  <tspan
+   id="tspan8491">WHERE</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79178">-- omezení dle podmínky (volitelné)</tspan>
+   id="tspan8493">-- omezení dle podmínky (volitelné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="415.01722"
-         id="tspan79182">  t1.pole = hodnota
+         y="372.58537"
+         id="tspan8497">  t1.pole = hodnota
 </tspan><tspan
          x="26.984375"
-         y="441.68384"
-         id="tspan79184">  
+         y="395.91875"
+         id="tspan8499">  
 </tspan><tspan
          x="26.984375"
-         y="468.35047"
-         id="tspan79190"><tspan
+         y="419.25212"
+         id="tspan8505"><tspan
    style="fill:#0000ff"
-   id="tspan79186">GROUP BY</tspan>  <tspan
+   id="tspan8501">GROUP BY</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79188">-- agregace (volitelné)</tspan>
+   id="tspan8503">-- agregace (volitelné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="495.01709"
-         id="tspan79192">  t1.pole
+         y="442.58549"
+         id="tspan8507">  t1.pole
 </tspan><tspan
          x="26.984375"
-         y="521.68372"
-         id="tspan79194">  
+         y="465.91887"
+         id="tspan8509">  
 </tspan><tspan
          x="26.984375"
-         y="548.35035"
-         id="tspan79200"><tspan
+         y="489.25224"
+         id="tspan8515"><tspan
    style="fill:#0000ff"
-   id="tspan79196">ORDER BY</tspan>  <tspan
+   id="tspan8511">ORDER BY</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79198">-- seřazení (volitelné)
+   id="tspan8513">-- seřazení (volitelné)
 </tspan></tspan><tspan
          x="26.984375"
-         y="575.01697"
-         id="tspan79202">  t1.pole
+         y="512.58562"
+         id="tspan8517">  t1.pole
 </tspan><tspan
          x="26.984375"
-         y="601.6836"
-         id="tspan79204">  
+         y="535.91899"
+         id="tspan8519">  
 </tspan><tspan
          x="26.984375"
-         y="628.35022"
-         id="tspan79210"><tspan
+         y="559.25236"
+         id="tspan8525"><tspan
    style="fill:#0000ff"
-   id="tspan79206">HAVING</tspan>  <tspan
+   id="tspan8521">HAVING</tspan>  <tspan
    style="fill:#008000"
-   id="tspan79208"> -- podmínka pro agregace (volitelné)</tspan>
+   id="tspan8523"> -- podmínka pro agregace (volitelné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="655.01685"
-         id="tspan79212">  t1.pole = hodnota
+         y="582.58574"
+         id="tspan8527">  t1.pole = hodnota
 </tspan><tspan
          x="26.984375"
-         y="681.68347"
-         id="tspan79214">  
+         y="605.91911"
+         id="tspan8529">  
 </tspan><tspan
          x="26.984375"
-         y="708.3501"
-         id="tspan79220"><tspan
+         y="629.25249"
+         id="tspan8535"><tspan
    style="fill:#0000ff"
-   id="tspan79216">LIMIT</tspan>   <tspan
+   id="tspan8531">LIMIT</tspan>   <tspan
    style="fill:#008000"
-   id="tspan79218">-- omezení počtu výsledků (volitelné)</tspan>
+   id="tspan8533">-- omezení počtu výsledků (volitelné)</tspan>
 </tspan><tspan
          x="26.984375"
-         y="735.01673"
-         id="tspan79222">  hodnota
+         y="652.58586"
+         id="tspan8537">  hodnota
 </tspan><tspan
          x="26.984375"
-         y="761.68335"
-         id="tspan79224">  
+         y="675.91923"
+         id="tspan8539">  
 </tspan></text>
   </g>
   <metadata
