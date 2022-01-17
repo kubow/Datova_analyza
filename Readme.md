@@ -1,81 +1,54 @@
-<!-- #region -->
+<!-- #raw -->
 # Úvod do datové analýzy
 
 Autor [Jakub Vajda](http://kubow.cz).
 
-Kurz "úvod do datové analýzy" přiblížuje problematiku zpracování datových souborů od základních konceptů. Jsou zde uvedeny cesty, jak datové soubory načíst v různých prostředích, jak jejich obsah analyzovat případně zobrazit.
+Kurz "úvod do datové analýzy" přiblížuje problematiku zpracování datových souborů od základních po středně pokročilé procesy. Je určen především lidem, kteří si chtějí osvojit metody zpracování dat, se kterými se setkávají při práci s daty a získat tak přehled nad metodami, které jsou k tomu použity. 
+
+Jsou zde uvedeny cesty, jak datové soubory načítat, jak jejich obsah analyzovat a zobrazovat. Tento výčet není v žádném případě kompletní ukazuje však nejpoužívanější metody, se kterými se může uživatel setkat.
+
+Struktura je členěna několik složek, jejichž obsah odpovídá jednotlivým kapitolám uvedeným níže.
 
 ---
 
-## Přehled kurzu
-
----
-
-### 1) Inicializace projektu 
+## 1) Inicializace projektu (INIT)
 
 <details>
     <summary>
          Detaily
     </summary>
-    Informace pro přípravu prezentačního prostředí se nachází ve složce s názvem "INIT".
-    Zároveň s těmito informacemi se předpokládá učitá základní znalost, která zasahuje do následujících oblastí:
-    <ul>
-        <li>Teoretické znalosti
-            <ul>
-                <li>Základy matematiky</li>
-                <li>Základy statistiky</li>
-            </ul>
-        </li>
-        <li>Praktické znalosti
-            <ul>
-                <li>Uživatelská práce na PC</li>
-                <li>Práce s jednou z prezentačních platforem:</li>
-                    <ul>
-                        <li>Office nástroje (PowerPoint, OpenOffice, LibreOffice, ...)</li>
-                        <li>Markdown textový záznam</li>
-                        <li>Webová prezentace pomocí modulu jupyter</li>
-                    </ul>
-            </ul>
-        </li>
-    </ul>
+    <p>Tato kapitola popisuje hlaně nastavení prostředí pro prezentaci, ale je zde i ucelený seznam aplikací a postupů, se kterými se u práce s daty setkáváme.</p>
 </details>  
 
 - [1A](INIT/1A_prezentace.md). příprava prezentačního prostředí 
 - [1B](INIT/1B_software.md). instalace software pro práci s daty 
 - [1C](INIT/1C_mindset.md). příprava myšlenkového rozpoložení (seznam užitých zkratek)
 
----
 
-### 2) Popis zdrojových dat
+## 2) Popis datových zdrojů (DATA)
 
 <details>
     <summary>
          Detaily
     </summary>
-    Součástí složky "DATA" jsou všechny komentované datové soubory a dále popisy:
+    <p>V této části se popisuje rozdělení různých typů úložišť pro data, jejich klasifikace dle různých kritérií a vyskytují se tu i surová data, která budou v průběhu kurzu ukazovány jako příklad.</p>
 </details>  
 
 - [2A](DATA/2A_rozdeleni_zakladni.md). základní rozdělení úložišť 
 - [2B](DATA/2B_uloziste_typy.md). jednotlivé typy dat 
 
----
- 
-### 3) Procesování dat
+## 3) Zpracování dat (PROC)
 
 <details>
     <summary>
          Detaily
     </summary>
-    Tématika práce s daty je uložena pod složkou "PROC" v následujících částech:
+    <p>Téma zpracování dat je poměrně široká oblast. V této kapitole si představíme co přesně se skrývá pod pojmem datová analýza a co všechno jí musí předcházet, aby byla kvalitní. Pro lepší názornost byla dále rozdělena do tří částí, jejichž detaily si ukážeme za chvíli.</p>
 </details>  
 
+- [3A](PROC/3A_dotazy.md). sběr dat (definice zájmových oblastí, uložení do rámce)
+- [3B](PROC/3B_aktivity.md). zpracování dat (sběr, čištění, extrakce, ...)
+- [3C](PROC/3C_analyza.md). analýza dat (a jejich prezentace)
 
-- [3A](PROC/3A_dotazy.md). dotazování na data (definice zájmových oblastí, uložení do rámce)
-- [3B](PROC/3B_aktivity.md). aktivity nad daty (sběr, čištění, extrakce, ...)
-- [3C](PROC/3C_analyza.md). analýzy dat (a jejich prezentace)
 
----
-
-<!-- #endregion -->
-Motto: Práce v izolovaném prostředí na kopii dat.
-
+<!-- #endraw -->
