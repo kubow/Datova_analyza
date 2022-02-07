@@ -3,48 +3,39 @@
 
 [←](../Readme.md)
 
-Obecně si můžeme celý proces práce s daty představit zhruba následovně: 
+Celé aktivitě kolem získávání a zpracování dat odpovídá proces "zpravodajský cyklus"[^int_cyc]. 
 
-![zpracovani dat](../obr/data_informace_znalosti.svg)
+V tomto kurzu tvoří níže uvedený proces základní rozvržení pracovního prostředí.
+
+![zpracovani dat](https://upload.wikimedia.org/wikipedia/commons/e/ee/Relationship_of_data%2C_information_and_intelligence.png)
+
+Surová (nezpracovaná) data jsou tedy striktně oddělena od dat zpracovaných, které se na výše uvedeném obrázku označují jako informace. V pracovním prostředí se s tímto oddělením lze setkat pod pojmem "vrstvy úložiště", případně "databázové vrstvy". 
+
+V závislosti na zvolených typech úložných technologií (viz [sekce 2A Úložiště](../DATA/2A_Rozdeleni_zakladni.md)) se pak volí odpovídající nástroje pro analýzu (viz [sekce 2C Nástroje](../DATA/2A_Rozdeleni_zakladni.md)).
+
+[![](https://mermaid.ink/img/pako:eNpVkE1qwzAQRq8itGohWeRn5UWhibMopRBIdlIWU2vsqJYlI8uBxPVhfICcQvRelR1Taq1G732MRtPQxAikEc0slGdyjLkm4bwu2Jt2aDW6E5nPX8jm6V1BJVOZQ4JEgHseg0v2ATZHJ3U2JkexYgeTSFBTumYxqJ_O3yd4M1y-ySVXvhO-0_5OhOmfgU_f3TCobRObytWl9h25lRYSc4G-7jPto8t26LJbsL0RpbFwmuAl29vw1a8pXf0bfyLWQWjIsEDtBkNntEBbgBRhW01POHXn4DmNQikwhVo5TrluQ7Quw2C4E9IZS6MUVIUzCrUzh6tO_sAjFUsI2y9G2v4Cz5-DPQ)](https://mermaid.live/edit/#pako:eNpVkE1qwzAQRq8itGohWeRn5UWhibMopRBIdlIWU2vsqJYlI8uBxPVhfICcQvRelR1Taq1G732MRtPQxAikEc0slGdyjLkm4bwu2Jt2aDW6E5nPX8jm6V1BJVOZQ4JEgHseg0v2ATZHJ3U2JkexYgeTSFBTumYxqJ_O3yd4M1y-ySVXvhO-0_5OhOmfgU_f3TCobRObytWl9h25lRYSc4G-7jPto8t26LJbsL0RpbFwmuAl29vw1a8pXf0bfyLWQWjIsEDtBkNntEBbgBRhW01POHXn4DmNQikwhVo5TrluQ7Quw2C4E9IZS6MUVIUzCrUzh6tO_sAjFUsI2y9G2v4Cz5-DPQ)
 
 ### Největší výzvy v oblasti získávání dat
 
 | Výzva    | Co řeší  | Příklad
 |---| --- | ---
-| Zpracování obrovských množství dat      | metody sběru dat   | Zvolíme programovací jazyk nebo analytický nástroj?
+| Získání obrovského množství dat  | Metody sběru dat | Zvolíme souborový úložný systém nebo použijeme databázi?
 | Spojování různorodých zdrojů    | principy datové integrace[^dta_int] | Budeme držet data v oddělené tabulce nebo připojíme k stávajícím záznamům?
 | Udržení konzistentního prostředí | umožněno díky datovému modelování[^dta_model] pomocí standartizované sady znaků a symbolů | Známe strukturu nového zdroje? Jak jej napojíme do systému?
 | Optimální zpracování dat na informace | nasazení datových skladů | Jak často agregovat data? Ukládat s časovýma značkama?
-| Získání odpovědí na naše otázky |   |
+| Získání odpovědí na naše otázky | volba vhodného analytického nástroje  |
 
 
 ### Metody sběru dat
 
-Při získávání dat používáme jeden z následujících postupů[^qry_lang]:
+Při získávání dat používáme jeden z následujících postupů:
 
-- pomocí [SQL](3A_dotazy_SQL.md) (pro strukturovaná data) 
-- pomocí jazyků XPath/XQuery (pro data typu [XML](3A_dotazy_xml.md)) 
-- pomocí jazyků JAQL/JSONiq (pro data typu [JSON](3A_dotazy_json.md)) 
+- pomocí dotazovacích jazyků[^qry_lang]
+    - pro strukturovaná data ([SQL](3A_dotazy_SQL.md), MDX a další)
+    - pro částečně strukturovaná data ([XQuery](3A_dotazy_xquery.md)) 
 - pomocí programovacích jazyků ([Python](3A_dotazy_python.md), [R](3A_dotazy_r.md), ...) 
 - pomocí analytických nástrojů (Microsoft Power BI, Metabase, ...)
 - pomocí dalších jazyků sloužící k získání specifických typů dat (GraphQL, Cypher, ...)
-
-Nejprve se blíže podíváme na strukturu dat a jejich možnosti propojení. Uvedenou problematikou se do detailu zabývá datové modelování<sup>2</sup>. Pro účely kurzu se spokojíme se zjednodušeným přístupem
-ke vztahům mezi jednotlivými záznamy v souborech. Na základní úrovni je potřeba definovat následující pojmy:
-
-- **tabulka (table)** - odpovídá jednomu pozorovanému datovému souboru, zde rozlišujeme:
-    - **pole (field)** - sloupec v tabulce
-    - **záhlaví (header)** - seřazený seznam názvů polí tabulky
-    - **záznam (row)** - seřazený seznam hodnot polí pro konkrétní řádek
-- **datový typ (data type)** - definice, jakých může pole nabývat hodnot, obecně:
-    - textový řetězec
-    - numerická reprezentace
-    - boolean (logická hodnota ano/ne)
-    - BLOB/CLOB (pole nesoucí binární typ informací)
-- **vazba (relation)** - druh vztahu mezi dvěma tabulkami
-    - 1:1 (každý záznam v tabulce T1 odpovídá záznamu v tabulce T2)
-    - 1:N (jeden záznam v tabulce T1 má N odpovídajících záznamů v tabulce T2)
-    - M:N (existuje víc záznamů z tabulky T1, které odpovídají více záznamm z tabulky T2)
 
 
 Při spojování více datových souborů se dostáváme do situací, kdy je třeba provádět více krokové přípravy, ty jsou uvedeny v následující sekci [aktivity nad daty](3B_aktivity.md).  
@@ -55,10 +46,12 @@ Při spojování více datových souborů se dostáváme do situací, kdy je tř
 --------
 Poznámky:
 
-[^dta_model]: anglicky Data Modelling, zkratka DM ([detaily](https://en.wikipedia.org/wiki/Data_modeling))
+[^int_cyc]: anglicky Intelligence cycle (detaily na [wikipedii](https://en.wikipedia.org/wiki/Intelligence_cycle)) nebo v české studii: [Zeman, Pavel (2010). Zpravodajský cyklus](https://www.obranaastrategie.cz/cs/archiv/rocnik-2010/1-2010/clanky/zpravodajsky-cyklus-klise-nebo-nosny-koncept.html))
 
-[^dta_int]: anglicky Data Integration, zkratka DI ([detaily](https://en.wikipedia.org/wiki/Data_integration))
+[^dta_model]: anglicky Data Modelling (zkratka DM) více informací na [https://en.wikipedia.org/wiki/Data_modeling](https://en.wikipedia.org/wiki/Data_modeling)
 
-[^qry_lang]: kompletnější výčet jazyků na dotazování se lze dočíst na [wikipedii](https://en.wikipedia.org/wiki/Query_language) pod heslem "Query Language".
+[^dta_int]: anglicky Data Integration (zkratka DI) více informací na [https://en.wikipedia.org/wiki/Data_integration](https://en.wikipedia.org/wiki/Data_integration)
+
+[^qry_lang]: kompletnější výčet jazyků na dotazování se lze dočíst na [https://en.wikipedia.org/wiki/Query_language](https://en.wikipedia.org/wiki/Query_language).
 
 

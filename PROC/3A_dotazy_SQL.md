@@ -19,12 +19,14 @@ K efektivnímu zobrazování složitějších dotazů nám pomáhá řada operá
 
 | Typ    | Název       | Popis       | Příklad     | 
 |--------| ----------- | ----------- | ----------- | 
+| zástupný znak | `%`    | nahrazení 0 i více zástupných znaků ve **WHERE** klauzuli (ve spojení s LIKE operátorem)  |  `SELECT A FROM T1 WHERE A.x LIKE='ab%'`  |
+| zástupný znak | `_`    | nahrazení právě jednoho zástupného znaků ve **WHERE** klauzuli (ve spojení s LIKE operátorem)  |  `SELECT A FROM T1 WHERE A.x LIKE='_uto'`  |
 | operátor | `AND`    | spojování podmínek ve **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x='1' AND A.y=1`  |
 | operátor | `OR`    | kombinace podmínek ve **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x='1' OR A.y=1`  |
-| operátor | `LIKE`    | definice podobných výrazů **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x LIKE 'ab%'` |
-| operátor | `AND`    | spojování podmínek ve **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x='1' AND A.y=1`  |
-| operátor | `OR`    | kombinace podmínek ve **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x='1' OR A.y=1`  |
-| operátor | `LIKE`    | definice podobných výrazů **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x LIKE 'ab%'` |
+| operátor | `LIKE`    | výběr podobných výrazů ve **WHERE** klauzuli   |  `SELECT A FROM T1 WHERE A.x LIKE 'ab%'` |
+| operátor | `BETWEEN`    | definice intervalu ve **WHERE** klauzuli (ve spojení s klauzulí AND)  |  `SELECT znacka FROM AUTA WHERE A.vyrobeno BETWEEN 1950 AND 1980` |
+| klauzule | `AS`    | definice aliasu pro sloupce nebo celé tabulky   |  `SELECT A AS 'hodnota' FROM T1`  |
+| kaluzule | `DISTINCT`    | omezení výběru pouze na unikátní výrazy  |  `SELECT DISTINCT znacka FROM AUTA` |
 
 
 
