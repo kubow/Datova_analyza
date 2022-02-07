@@ -1,7 +1,7 @@
 <!-- #region -->
 ## Příprava prezentačního prostředí
 
-[←](../Readme.md)
+[←](../Readme.md) 
 
 K prohlížení prezentace je potřeba zvolit jednu z následujících cest:
 

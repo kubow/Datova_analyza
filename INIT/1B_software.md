@@ -1,24 +1,18 @@
 ## Programy pro práci s datovými soubory
 
-[←](../Readme.md)
+[←](../Readme.md) [→ další sekce](../1C_mindset.md)
 
 Níže jsou popsány základní typy datasetů a nástroje, které s nimi umí pracovat
 
 Pořadí nástrojů je seřazeno dle abecedy, preference je ponechána čistě na uživateli.
 
-Univerzální nástroje k práci s daty
+### Nástroje pro práci s daty
 
 -   Textové a tabulkové procesory 
--   Programovací jazyky <details>
-    <summary>
-         (detaily)
-    </summary>
-    (Srovnání oblíbenosti programovacích jazyků z roku 2020 [zdroj stackoverflow.com])[https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages]
-</details>  
-
+-   Programovací jazyky [^programming] 
 	-   Python (Pandas, SciPy, ...)
 	-   R
-    -   PAW/ROOT<sup>1</sup>
+    -   PAW/ROOT[^fortran]
 	-   Julia
 
 -   Databázový software
@@ -87,6 +81,7 @@ Prohlížení velkého množství databází v jazyce python umožňuje knihovna
 --------
 Poznámky:
 
-<sup>1</sup> - jedná se o FORTRAN/C++ frameworky pro analýzu dat, které vznikly v [CERN](https://en.wikipedia.org/wiki/CERN)u.
+[^programming]: Srovnání oblíbenosti programovacích jazyků z roku 2020 zdroj [stackoverflow.com](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages).
 
-<sup>2</sup> -
+[^fortran]: jedná se o FORTRAN/C++ frameworky pro analýzu dat, které vznikly v [CERN](https://en.wikipedia.org/wiki/CERN)u.
+
