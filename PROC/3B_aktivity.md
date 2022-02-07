@@ -1,26 +1,26 @@
-<!-- #region -->
 ## Aktivity nad daty
 
-[←](../Readme.md)
+[←](../Readme)
 
-Prvním krokem při práci s daty obecně obecně je shromáždění relevantních informací na jedno místo. 
-To jsme si ukázali v předchozí kapitole:
+Pokud máme data shromážděny na místě (detaily v předchozí kapitole [3A](3A_dotazy)), soustřeďujeme se na následující oblasti ([zatím jen odkaz jako zdroj](https://en.wikipedia.org/wiki/Data_analysis)):
 
-- Získání hodnot (viz předchozí kapitola [3A](3A_dotazy))
-- Filtrace datového souboru
-- Výpočet derivované hodnoty 
+- Příprava dat[^dta_prp]
+    - [Čištění a validace](3B_aktivity_validace)
+- Základní charakteristika dat (viz kapitola 1B - podsekce statistika)
+    - Průměr, střední hodnoty a odchylky
+    - Extrémy a anomálie
+    - Distribuční křivka hodnot
+- Výpočet derivovaných hodnot 
     - klasifikace
-    - kalulace
-- Sezaření datového souboru
-- Sumarizace datového souboru
+    - kalkulace
+- Změna pohledu
+    - Filtrace a řazení
+    - Sumarizace
+
+Tady musíme popsat, jak funguje rozdělení rolí pro práci s daty[^dta_gov]:.
 
 
-https://en.wikipedia.org/wiki/Data_analysis
-Při zpracování dat a přípravě souborů pro následné zpracování
+Poznámky:
 
-   
-<!-- #endregion -->
+[^dta_prp]: anglicky Data Pre-Processing ([detaily](https://en.wikipedia.org/wiki/Data_pre-processing))
 
-```python
-
-```
