@@ -1,0 +1,50 @@
+
+
+3-zpracovani-dat
+
+Dobrý den, vítám Vás u 3. dílu kurzu úvodu do datové analýzy,
+v předchozích kapitolách jsme si ukázali jak:
+- nastavit projekt ke spuštění a jak se zorientovat ve struktuře
+- poté jsme si ukázali, s jakými typy dat se potkáváme
+
+Nyní přistupujeme k praktické části zpracování datových souborů.
+V této kapitole si představíme jednak to, jak získáváme data z jejich zdrojů
+Dále se podíváme na základní metody zpracování dat
+A v poslední části tohoto kurzu se podíváme na vlastní analýzu a prezentaci dat.
+
+3-1-sber-dat *
+
+Dobrý den, vítám Vás u 3. dílu kurzu úvodu do datové analýzy,
+v části popipující, jakým způsobem získáváme data ze zdrojů.
+
+Pokud se podíváme na celý proces práce s daty obecně, 
+můžeme si ho představit zhruba následovně
+
+-
+
+3-2-aktivity
+
+Dobrý den, vítám Vás u 3. dílu kurzu úvodu do datové analýzy.
+V této části si ukážeme, jak postupovat v momentě, kdy máme vybrány data pro import do systému.
+
+V první fázi musíme zkontrolovat data, zda neobsahují chyby:
+Proces čištění dat (angl. data cleansing), při kterém identifikujeme 
+poškozené, nepřesné či jinak neplatné záznamy.
+To nám umožňuje vylepšit kvalitu dat, která vstupuje do systému.
+
+Jedná se o následující vlastnosti:
+1. správnost neboli validita ověřuje, zda záznamy vyhovují podmínkám definovaným v našem vstupním systému
+2. přesnost udává, jaké datové typy volíme pro jednotlivé vstupní pole.
+3. kompletnost - zde volíme, jakým způsobem budeme reprezentovat neplatné záznamy
+4. u konzistence kontrolujeme, zda jednotlivé hodnoty pro datové sloupce nabývají podobných hodnot
+5. uniformita
+
+Nyní si na konkrétních příkladech ukážeme, co přesně můžou tyto pojmy znamenat:
+- V prvním případě máme pět možností, ktreré jsou nabízeny v dotazníku a počet respondentů, 
+  kteří na ně odpověděli. V případě kontroly správnosti se musíme ujistit, 
+  jakým způsobem jsou data v našem databázovém systému ukládány. 
+  Pokud například ukládáme v procentuelním zastoupení,
+  přepočítáme na odpovídající hodnoty, jak je uvedeno v posledním sloupci.
+- Z volby hodnot pak přímo vyplývají i přesnosti pole, pokud například budeme zanášet
+  počty respondentů, stačí nám datové pole typu integer (celá čísla), pokud chceme procenta, 
+  pak dává smysl spíše datové pole typu decimal (desetinné číslo).
