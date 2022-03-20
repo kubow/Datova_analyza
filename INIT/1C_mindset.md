@@ -28,6 +28,19 @@
     </ul>
 </details>  
 
+https://www.analyticsvidhya.com/blog/2014/01/train-mind-analytical-thinking/
+
+http://al3xandr3.github.io/data-analysis-mindset.html
+
+- Buďte zvědaví
+- Zkuste myslet jako děti
+- Nazapojujte emoce
+- Nebojte se říci, že něco nevíte
+- Zkuste být přesní
+- Hledejte původní příčiny
+- Komunikujte s ostatními
+
+
 https://zijuspesne.cz/citace-internetovych-zdroju/
 
 
