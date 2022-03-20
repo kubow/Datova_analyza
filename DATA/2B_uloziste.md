@@ -14,6 +14,9 @@ Fyzické soubory členíne na tyto typy:
   - Strukturované soubory dat (TXT, CSV, ... )
   - Částečně strukturované soubory dat (XML, JSON, ...)
   
+  Různé speciály
+  https://pandas.pydata.org/pandas-docs/version/0.21/io.html#io-parquet
+  
 ### Databáze
 
 Databáze se rozdělují na velké množství typů dle jejich funkce:
