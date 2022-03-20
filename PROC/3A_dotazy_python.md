@@ -1,8 +1,23 @@
+<!-- #region -->
 ## Získání dat pomocí jazyka Python
 
 [←](3A_dotazy.md)
 
-Programovací jazyk Python je navržen jako víceúčelový, neslouží tedy jen k analýzám dat. Poprvé byl vydán v roce 1991 a od té doby bylo vydáno několik verzí, v současné době se drží vývojová řada označena jako Python 3<sup>1</sup>. Díky jeho univerzálnosti vyšla celá řada rozšíření a nádstaveb, pro účely datové analýzy nás však bude zajímat jen základní verze Python 3 s několika doinstalovanými moduly pro práci s daty.
+Programovací jazyk Python[^python_lng] je navržen jako víceúčelový (neslouží tedy jen k analýzám dat), v základním nastavení pracuje s těmito datovými typy:
+
+| Datový typ | Popis       | Příklad |
+|-----------| --------------------- | ----------|
+| object      | Textový řetězec            | `'automobil'`|
+| float64    | Reálné číslo             | `24.0`  |
+| int64      | Celé číslo            | `24`|
+| datetime64    | Datum (a čas)            | `'2022-01-01 12:01:00'`  |
+
+V rámci datové analýzy nás bude zajímat funkcionalita vestavěných modulů[^python_bui]:
+
+- **os / pathlib** pro správu souborů uložených na souborovém systému
+- práce s webovými adresami
+- práce s bitovým zápisem
+- práce se streamem
 
 | Příkaz    | Popis       | 
 |-----------| --------------------- | 
@@ -13,17 +28,16 @@ Programovací jazyk Python je navržen jako víceúčelový, neslouží tedy jen
 | `os.ath.isfile(cesta) / os.ath.isdir(cesta)`    | zjištění zda je cesta soubor / adresář |
 | `pd.read_csv(cesta_souboru) / df.to_csv(cesta_souboru)`     | čtení / zápis csv souboru |
 
-Jazyk Python pracuje s omezeným počtem datových typů:
 
-| Datový typ | Popis       | Příklad |
-|-----------| --------------------- | ----------|
-| object      | Textový řetězec            | `'automobil'`|
-| float64    | Reálné číslo             | `24.0`  |
-| int64      | Celé číslo            | `24`|
-| datetime64    | Datum (a čas)            | `'2022-01-01 12:01:00'`  |
+Pro pohodlnější práci s daty nás budou dále zajímat následující rozšiřující moduly:
+- **matlpotlib**[^python_mpl] pro grafickou reprezentaci dat
+- **numpy**[^python_np] pro vědecké výpočty
+- **pandas**[^python_pd] pro datovou analýzu
+- **scikit-learn**[^python_skl] pro práci se strojovým učením
+- **scipy**[^python_sp] pro práci s algoritmy
 
-Příklady prohlížení dat pomocí programovacího jazyka python:
 
+<!-- #endregion -->
 
 ```python
 import json
@@ -61,7 +75,17 @@ print(dir(sheet))
 Poznámky:
 
 
-<sup>1</sup> - přehled verzí Python je k dispozici na [python.org](https://www.python.org/downloads/).
+[^python_lng]:  Poprvé byl vydán v roce 1991 a od té doby bylo vydáno několik verzí, v současné době se drží vývojová řada označena jako Python 3. přehled verzí Python je k dispozici na [https://www.python.org/downloads/](https://www.python.org/downloads/).
 
-<sup>2</sup> -
+[^python_bui]: Pro Python verze 3 jsou k dispozici zabudované moduly na adrese https://docs.python.org/3/py-modindex.html
+
+[^python_mpl]: https://matplotlib.org/
+
+[^python_np]: https://numpy.org/
+
+[^python_pd]: https://pandas.pydata.org/
+
+[^python_skl]: https://scikit-learn.org/stable/index.html
+
+[^python_sp]: https://scipy.org/
 <!-- #endregion -->
