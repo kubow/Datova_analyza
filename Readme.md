@@ -1,17 +1,22 @@
-<!-- #raw -->
+<!-- #region -->
 # Úvod do datové analýzy
 
 Autor [Jakub Vajda](http://kubow.cz).
 
-Kurz "úvod do datové analýzy" přiblížuje problematiku zpracování datových souborů od základních po středně pokročilé procesy. Je určen především lidem, kteří si chtějí osvojit metody zpracování dat, se kterými se setkávají při práci s daty a získat tak přehled nad metodami, které jsou k tomu použity. 
+Kurz "úvod do datové analýzy" přibližuje problematiku zpracování datových souborů od základních po středně pokročilé procesy. Je určen především lidem, kteří si chtějí osvojit metody zpracování dat, se kterými se setkávají při práci s daty a získat tak přehled nad metodami, které jsou k tomu použity. 
 
 Jsou zde uvedeny cesty, jak datové soubory načítat, jak jejich obsah analyzovat a zobrazovat. Tento výčet není v žádném případě kompletní ukazuje však nejpoužívanější metody, se kterými se může uživatel setkat.
 
-Struktura je členěna několik složek, jejichž obsah odpovídá jednotlivým kapitolám uvedeným níže.
+Struktura je členěna na několik složek, jejichž obsah odpovídá jednotlivým kapitolám uvedeným níže (název odpovídající složky je uveden v závorce za názvem kapitoly).
 
 ---
 
 ## 1) Inicializace projektu (INIT)
+
+```
+git clone https://github.com/kubow/Datova_analyza
+cd Datova_analyza
+```
 
 <details>
     <summary>
@@ -35,7 +40,7 @@ Struktura je členěna několik složek, jejichž obsah odpovídá jednotlivým 
 </details>  
 
 - [2A](DATA/2A_rozdeleni_zakladni.md). základní rozdělení úložišť 
-- [2B](DATA/2B_uloziste_typy.md). jednotlivé typy dat 
+- [2B](DATA/2B_uloziste.md). jednotlivé typy dat 
 
 ## 3) Zpracování dat (PROC)
 
@@ -50,5 +55,10 @@ Struktura je členěna několik složek, jejichž obsah odpovídá jednotlivým 
 - [3B](PROC/3B_aktivity.md). zpracování dat (sběr, čištění, extrakce, ...)
 - [3C](PROC/3C_analyza.md). analýza dat (a jejich prezentace)
 
+---
 
-<!-- #endraw -->
+## Zavedení prostředí
+
+Pro provádění praktických ukázek a testů stáhněte projekt pomocí
+
+<!-- #endregion -->

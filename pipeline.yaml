@@ -1,0 +1,5 @@
+tasks:
+   # source is the code you want to execute (.ipynb also supported)
+  - source: Readme.ipynb
+    # products are task's outputs
+    product: Readme_temp.md
