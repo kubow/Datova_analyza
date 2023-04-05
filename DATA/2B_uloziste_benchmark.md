@@ -5,7 +5,7 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.3'
+      format_version: "1.3"
       jupytext_version: 1.11.2
   kernelspec:
     display_name: Python 3
@@ -14,23 +14,22 @@ jupyter:
 ---
 
 <!-- #region -->
+
 ## Porovnání rychlosti načtení dat z různých zdrojů
 
 [←](../Readme.md)
 
 Pěkné srovnání na https://stackoverflow.com/questions/41066582/python-save-pandas-data-frame-to-parquet-file
 
-  
 ### Fyzické soubory
-  
+
 V této části porovnáváme vypočtení průměru nad vzorovým datasetem pro následující zdroje:
 
-  - CSV soubor
-  - zazipovaný CSV soubor
-  - Částečně strukturované soubory dat (XML, JSON, ...)
-  - SQLite databázové úložiště
-  - Sloupcové typy úložíšť (parquet)
-  
+- CSV soubor
+- zazipovaný CSV soubor
+- Částečně strukturované soubory dat (XML, JSON, ...)
+- SQLite databázové úložiště
+- Sloupcové typy úložíšť (parquet)
 
 <!-- #endregion -->
 
@@ -54,11 +53,11 @@ def file_size(file_name):
         return f'{round(size/1024)} kb'
     else:
         return f'{size} b'
-    
+
 def tt(start, end):
     # vraci pocet vterin mezi dvema casovymi znackami
     return (end - start).total_seconds()
-    
+
 def file_summary(f_name):
     # vraci prumer hodnot pro sloupec (promenna field) v zavislosti na typu zdroje
     field = 'emp_length_int'  # Age
@@ -89,16 +88,16 @@ def file_summary(f_name):
     else:  # default fallback to stress out errors
         return {'N/A   ': 50}
 '''
-file_list = ['./FakeNameGenerator.com_93dd768d.csv', './FakeNameGenerator.com_93dd768d.zip', 
-             './FakeNameGenerator.com_93dd768d.json', './FakeNameGenerator.com_93dd768d.xml',
-             './FakeNameGenerator.com_93dd768d.parquet', './FakeNameGenerator.com_93dd768d.parquet.brotli',
-             './FakeNameGenerator.com_93dd768d.parquet.gz', './FakeNameGenerator.com_93dd768d.db']
+file_list = ['./Fake/FakeNameGenerator.com_93dd768d.csv', './Fake/FakeNameGenerator.com_93dd768d.zip',
+             './Fake/FakeNameGenerator.com_93dd768d.json', './Fake/FakeNameGenerator.com_93dd768d.xml',
+             './Fake/FakeNameGenerator.com_93dd768d.parquet', './Fake/FakeNameGenerator.com_93dd768d.parquet.brotli',
+             './Fake/FakeNameGenerator.com_93dd768d.parquet.gz', './Fake/FakeNameGenerator.com_93dd768d.db']
 '''
 
 file_list = ['C:/Users/jirib/Downloads/loan_final313.csv',
-             'C:/Users/jirib/Downloads/loan_final313.csv.zip', 
-             'C:/Users/jirib/Downloads/loan_final313.json', 
-             'C:/Users/jirib/Downloads/loan_final313.parquet', 
+             'C:/Users/jirib/Downloads/loan_final313.csv.zip',
+             'C:/Users/jirib/Downloads/loan_final313.json',
+             'C:/Users/jirib/Downloads/loan_final313.parquet',
              'C:/Users/jirib/Downloads/loan_final313.parquet.gz']
 
 
@@ -111,7 +110,7 @@ for file in file_list:
     average = round(summary[file_name], 3)
     print(f'{file_name} soubor ukazuje průměr {average} let za {tt(start_time, end_time)} vteřin (velikost souboru {file_size(file)}).')
 
-          
+
 ```
 
 ```python

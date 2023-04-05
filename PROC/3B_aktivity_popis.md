@@ -1,7 +1,8 @@
 <!-- #region -->
+
 ## Popis dat
 
-[←](3B_aktivity.md)  [→ další krok](../3B_aktivity_proces.md)
+[←](3B_aktivity.md) [→ další krok](../3B_aktivity_proces.md)
 
 Při charakteristice dat se soustředíme na následující sadu činností:
 
@@ -15,23 +16,21 @@ Základní popis dat v prgramovacím jazyce python
 https://medium.com/@kasiarachuta/basic-statistics-in-pandas-dataframe-594208074f85
 https://github.com/kasiarachuta/Blog/blob/master/Basic%20statistics%20on%20pandas%20DataFrame.ipynb
 
-
 ### Základní popis dat
 
-Na prvním příkladu si ukážeme jakým zpsůobem mohou být záznamy validovány a identifikována jejich přesnost. 
+Na prvním příkladu si ukážeme jakým zpsůobem mohou být záznamy validovány a identifikována jejich přesnost.
+
 <!-- #endregion -->
 
 ```python
 import pandas as pd
 
 print("První dva řádky datovéhou souboru:")
-df = pd.read_csv('../DATA/FakeNameGenerator.com_93dd768d.zip', compression='zip')
+df = pd.read_csv('../DATA/Fake/FakeNameGenerator.com_93dd768d.zip', compression='zip')
 df.head(2)
 ```
 
-
 Přehled statistik nad datovým polem číselného typu.
-
 
 ```python
 pole = 'Centimeters'  # zde si můžeme zvolit libovolné pole
@@ -49,8 +48,6 @@ print(f"Standartní odchylka výšek responentů: {df[pole].std()} cm2")
 
 tady bude nějaký popis
 
-
-
 ```python
 
 ```
@@ -59,6 +56,4 @@ tady bude nějaký popis
 
 Poznámky:
 
-[^dta_cls]: anglicky Data Classification, více viz [https://en.wikipedia.org/wiki/Data_classification_(business_intelligence)](https://en.wikipedia.org/wiki/Data_classification_(business_intelligence))
-
-
+[^dta_cls]: anglicky Data Classification, více viz [https://en.wikipedia.org/wiki/Data*classification*(business_intelligence)](<https://en.wikipedia.org/wiki/Data_classification_(business_intelligence)>)

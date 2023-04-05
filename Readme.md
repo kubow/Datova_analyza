@@ -13,7 +13,7 @@ Struktura je členěna na několik složek, jejichž obsah odpovídá jednotliv�
 
 ## 1) Inicializace projektu (INIT)
 
-```
+```shell
 git clone https://github.com/kubow/Datova_analyza
 cd Datova_analyza
 ```
